@@ -1,0 +1,14 @@
+%.aux: %.tex 
+	latex $(addsuffix .tex,$(basename $<)) 
+%_fg.log: %.tex %.aux 
+	if test -f $(addsuffix .mp,$(basename $@)); then \
+	  mpost $(addsuffix .mp,$(basename $@)); \
+	elif test -f $(addsuffix .mf,$(basename $@)); then \
+	  mf $(addsuffix .mf,$(basename $@)); fi 
+%.ps: %.tex %.aux %_fg.log 
+	make $(addsuffix _fg.log,$(basename $<)); lc=3; \
+	while egrep -s Process $(addsuffix .log,$(basename $<)) \
+	  && [ $$lc -gt 0 ] ; do latex $<; lc=`expr $$lc - 1`; done; \
+	dvips -o $(addsuffix .ps,$(basename $<)) \
+	  $(addsuffix .dvi,$(basename $<))
+

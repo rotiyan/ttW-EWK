@@ -1,0 +1,86 @@
+%!PS
+%%BoundingBox: 0 0 86 86 
+%%HiResBoundingBox: 0 0 85.03784 85.03784 
+%%Creator: MetaPost 2.000
+%%CreationDate: 2021.04.13:1813
+%%Pages: 1
+%%BeginProlog
+%%EndProlog
+%%Page: 1 1
+ 0 0 0 setrgbcolor 0 0.99626 dtransform truncate idtransform setlinewidth pop
+ [] 0 setdash 1 setlinecap 1 setlinejoin 10 setmiterlimit
+newpath 85.03784 42.51892 moveto
+54.11493 49.48349 lineto stroke
+newpath 71.55382 47.05983 moveto
+65.8893 46.83162 lineto
+70.90904 44.19704 lineto
+ closepath fill
+newpath 0 42.51947 moveto
+30.92265 35.5546 lineto stroke
+newpath 13.48387 37.97842 moveto
+19.14838 38.2066 lineto
+14.12868 40.84122 lineto
+ closepath fill
+newpath 54.11493 49.48349 moveto
+46.38428 70.37694 lineto stroke
+newpath 52.21448 58.8483 moveto
+48.938 63.47505 lineto
+49.46213 57.82993 lineto
+ closepath fill
+newpath 54.11493 49.48349 moveto 0 0 rlineto stroke
+newpath 51.79558 48.09052 moveto 0 0 rlineto stroke
+newpath 49.47655 46.69777 moveto 0 0 rlineto stroke
+newpath 47.1572 45.30478 moveto 0 0 rlineto stroke
+newpath 44.83817 43.912 moveto 0 0 rlineto stroke
+newpath 42.51877 42.51903 moveto 0 0 rlineto stroke
+newpath 40.19942 41.12608 moveto 0 0 rlineto stroke
+newpath 37.88039 39.7333 moveto 0 0 rlineto stroke
+newpath 35.56104 38.34032 moveto 0 0 rlineto stroke
+newpath 33.242 36.94757 moveto 0 0 rlineto stroke
+newpath 30.92265 35.5546 moveto 0 0 rlineto stroke
+newpath 46.38428 70.37694 moveto
+65.07596 80.82382 lineto stroke
+newpath 54.96492 73.49176 moveto
+59.02922 77.44426 lineto
+53.53319 76.05344 lineto
+ closepath fill
+newpath 46.38428 70.37694 moveto 0 0 rlineto stroke
+newpath 43.98221 71.3267 moveto 0 0 rlineto stroke
+newpath 41.58014 72.27647 moveto 0 0 rlineto stroke
+newpath 39.17848 73.22607 moveto 0 0 rlineto stroke
+newpath 36.77641 74.17584 moveto 0 0 rlineto stroke
+newpath 34.37434 75.12561 moveto 0 0 rlineto stroke
+newpath 31.97227 76.07536 moveto 0 0 rlineto stroke
+newpath 29.5702 77.02513 moveto 0 0 rlineto stroke
+newpath 27.16814 77.9749 moveto 0 0 rlineto stroke
+newpath 24.76648 78.9245 moveto 0 0 rlineto stroke
+newpath 22.36441 79.87427 moveto 0 0 rlineto stroke
+newpath 19.96234 80.82404 moveto 0 0 rlineto stroke
+newpath 30.92265 35.5546 moveto
+38.65302 14.6608 lineto stroke
+newpath 32.82306 26.18968 moveto
+36.09924 21.56319 lineto
+35.57526 27.20796 lineto
+ closepath fill
+newpath 38.65302 14.6608 moveto
+19.96141 4.21423 lineto stroke
+newpath 30.07236 11.54617 moveto
+26.00793 7.59358 lineto
+31.50412 8.98438 lineto
+ closepath fill
+newpath 38.65302 14.6608 moveto
+37.32968 11.31396 42.34993 9.32896 43.67326 12.6758 curveto
+44.32994 14.3366 41.83875 15.32161 41.18207 13.66081 curveto
+39.53046 9.48372 45.7961 7.0063 47.44771 11.1834 curveto
+48.10439 12.84418 45.61322 13.82916 44.95656 12.16841 curveto
+43.30495 7.9913 49.57057 5.51389 51.22218 9.69096 curveto
+51.87886 11.35176 49.38768 12.33676 48.731 10.67598 curveto
+47.07928 6.49863 53.34532 4.02104 54.99704 8.19841 curveto
+55.65372 9.8592 53.16254 10.84421 52.50586 9.18343 curveto
+50.85425 5.00632 57.11987 2.5289 58.77148 6.70598 curveto
+59.42816 8.36676 56.937 9.35175 56.28033 7.691 curveto
+54.62872 3.5139 60.89436 1.03648 62.54597 5.21358 curveto
+63.20265 6.87437 60.71146 7.85939 60.05478 6.1986 curveto
+58.73145 2.85176 63.7517 0.86676 65.07503 4.2136 curveto stroke
+showpage
+%%EOF

@@ -1,0 +1,962 @@
+\documentclass[a4paper]{article}
+
+\usepackage{feynmp}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{longtable}
+\usepackage{pst-text}
+
+\setlength{\headheight}{-1cm}
+\setlength{\headsep}{0mm}
+\setlength{\oddsidemargin}{-1in}
+\setlength{\evensidemargin}{-1in}
+\setlength{\textheight}{28truecm}
+\setlength{\textwidth}{21truecm}
+
+\newcommand{\p}{+}
+\newcommand{\m}{-}
+
+\begin{document}
+\begin{fmffile}{2_4__db__u__Wp__t__tb__G_fg}
+
+  \fmfset{thick}{1.25thin}
+  \fmfset{arrow_len}{2mm}
+  \fmfset{curly_len}{1.5mm}
+  \fmfset{wiggly_len}{1.5mm}
+  \fmfset{dot_len}{1mm}
+  \unitlength=0.5mm
+
+  \pagestyle{empty}
+
+  \begin{longtable}{ccc}
+
+  \parbox{50mm}{\begin{center}
+  Graph 1\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_4_56_60,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 2\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_4_56_60,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 3\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_4_56_60,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 4\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_4_56_60,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 5\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{dashes,label.side=right,label=$h_{0}$}{v_4_56_60,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 6\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_4_56_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_56_60}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_56_60,j_4}
+    \fmf{dashes,label.side=right,label=$h_{0}$}{v_4_56_60,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 7\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_20_40_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_20_40_60}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_4_16_20,v_20_40_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_16_20}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_16_20,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_4_16_20}
+    \fmf{fermion,label.side=right,label=$t$}{v_20_40_60,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 8\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_52_8_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_52_8_60}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_4_48_52,v_52_8_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_48_52}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_48_52,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_4_48_52}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_52_8_60,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 9\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_60_2_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_60_2_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_60_2_62,v_52_8_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_52_8_60}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_32_20_52,v_52_8_60}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_20_52}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_20_52,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_4_16_20,v_32_20_52}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_16_20}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_16_20,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_4_16_20}
+    \fmf{fermion,label.side=right,label=$t$}{v_52_8_60,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_60_2_62}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 10\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_16,j_8,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_56_6_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_6_62}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_56_6_62,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_56_6_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 11\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_32,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_56_6_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_6_62}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_56_6_62,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_56_6_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 12\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_16,j_8,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_56_6_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_6_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_56_6_62,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_56_6_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 13\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_32,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_56_6_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_6_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_56_6_62,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_56_6_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 14\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_28_34_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_34_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_34_62,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_28_34_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 15\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_28_34_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_34_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_34_62,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_28_34_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 16\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_28_34_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_34_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_34_62,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{dashes,label.side=right,label=$h_{0}$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_28_34_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 17\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_28_34_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_34_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_34_62,v_20_8_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_20_8_28}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_4_16_20,v_20_8_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_16_20}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_16_20,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_4_16_20}
+    \fmf{fermion,label.side=right,label=$t$}{v_20_8_28,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_28_34_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 18\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_32,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_24_38_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_38_62}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_38_62,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_32_6_38,v_24_38_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_6_38}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_6_38,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_32_6_38}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 19\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_4,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_24_38_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_38_62}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_38_62,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_34_38,v_24_38_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_34_38}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_34_38,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_4_34_38}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 20\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_32,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_24_38_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_38_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_38_62,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_32_6_38,v_24_38_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_6_38}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_6_38,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_32_6_38}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 21\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_16,j_8,j_4,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_24_38_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_38_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_38_62,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_34_38,v_24_38_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_34_38}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_34_38,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_4_34_38}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 22\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_28_2_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_2_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_2_30,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_28_2_30}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 23\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_28_2_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_2_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_2_30,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_28_2_30}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 24\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_28_2_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_2_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_2_30,v_4_24_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_24_28}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_24_28,j_4}
+    \fmf{dashes,label.side=right,label=$h_{0}$}{v_4_24_28,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_28_2_30}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 25\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_28_2_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_28_2_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_28_2_30,v_20_8_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_20_8_28}
+    \fmf{fermion,label.side=right,label=$\bar{b}$}{v_4_16_20,v_20_8_28}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_16_20}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_16_20,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_4_16_20}
+    \fmf{fermion,label.side=right,label=$t$}{v_20_8_28,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_28_2_30}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 26\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_16,j_8,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_24_6_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_6_30}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_6_30,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_24_6_30}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 27\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_16,j_8,j_4,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_24_6_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_6_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_6_30,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_2_6,v_24_6_30}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_2_6}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_2_6,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_4_2_6}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 28\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_26_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_26_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_26_30,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_2_26,v_4_26_30}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_2_26}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_2_26,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_24_2_26}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 29\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_32,j_4,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_32_30_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_30_62}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_30_62,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{d}$}{v_4_26_30,v_32_30_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_26_30}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_26_30,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_2_26,v_4_26_30}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_2_26}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_2_26,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_24_2_26}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 30\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_56_2_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_2_58}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_56_2_58,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_56_2_58}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 31\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_56_2_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_2_58}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_56_2_58,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_56_2_58}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 32\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_56_2_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_2_58}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_56_2_58,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_48_8_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{v_32_16_48,v_48_8_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_16_48}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_16_48,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_32_16_48}
+    \fmf{fermion,label.side=right,label=$t$}{v_48_8_56,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_56_2_58}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 33\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_56_2_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_56_2_58}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_56_2_58,v_16_40_56}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_40_56}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_40_56}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_40_56,v_8_32_40}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_8_32_40}
+    \fmf{fermion,label.side=right,label=$t$}{v_8_32_40,j_8}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_8_32_40,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_56_2_58}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 34\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_34_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_34_58}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_34_58,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_24_34_58}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 35\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_16,j_8,j_32,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_34_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_34_58}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_34_58,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_2_34,v_24_34_58}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_2_34}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_2_34,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_32_2_34}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+  \parbox{50mm}{\begin{center}
+  Graph 36\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_26_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_26_58}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_26_58,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_2_26,v_32_26_58}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_2_26}
+    \fmf{photon,label.side=right,label.dist=1wiggly_len,label=$\gamma$}{v_24_2_26,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_24_2_26}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} \\
+
+  \parbox{50mm}{\begin{center}
+  Graph 37\\[6mm]
+  \begin{fmfgraph*}(60,60)
+    \fmfsurround{j_1,j_4,j_32,j_16,j_8,j_2}
+    \fmfv{decor.size=0ex,label=$J_{0}$}{j_1}
+    \fmfv{decor.size=0ex,label=$J_{1}$}{j_2}
+    \fmfv{decor.size=0ex,label=$J_{2}$}{j_4}
+    \fmfv{decor.size=0ex,label=$J_{3}$}{j_8}
+    \fmfv{decor.size=0ex,label=$J_{4}$}{j_16}
+    \fmfv{decor.size=0ex,label=$J_{5}$}{j_32}
+    \fmf{fermion,label.side=right,label=$d$}{v_4_58_62,j_1}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_4_58_62}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$W^{+}$}{v_4_58_62,j_4}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_32_26_58,v_4_58_62}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_32_26_58}
+    \fmf{gluon,label.side=right,label.dist=1.5curly_len,label=$g$}{v_32_26_58,j_32}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{v_24_2_26,v_32_26_58}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_24_2_26}
+    \fmf{dots,label.side=right,label.dist=1wiggly_len,label=$Z^0$}{v_24_2_26,v_16_8_24}
+    \fmfv{decor.size=0ex,label=$\begin{array}{c}\end{array}$}{v_16_8_24}
+    \fmf{fermion,label.side=right,label=$\bar{t}$}{j_16,v_16_8_24}
+    \fmf{fermion,label.side=right,label=$t$}{v_16_8_24,j_8}
+    \fmf{fermion,label.side=right,label=$\bar{u}$}{j_2,v_24_2_26}
+  \end{fmfgraph*}\\[4mm]$\mathcal{O}(g_s^1\,e^3)$\end{center}\vspace*{1mm}} &
+
+
+  \end{longtable}
+
+\end{fmffile}
+\end{document}
